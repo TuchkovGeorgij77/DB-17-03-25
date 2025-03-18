@@ -26,7 +26,7 @@ namespace DB_06_03_25_gr
         // Новое:
         private DbConnection _dbConnection;
         private DbProviderFactory _dbProviderFactory;
-        DataTable dataTable;
+        private DataTable _dataTable;
 
 
         public MainWindowForm()
@@ -34,11 +34,12 @@ namespace DB_06_03_25_gr
             InitializeComponent();
             TextLabel.Text = "";
 
+            ConnectButton.Enabled = false;
             DisconnectButton.Enabled = false;
             CreateDBButton.Enabled = false;
             DeleteDBButton.Enabled = false;
             FillTableButton.Enabled = false;
-            //ShowDataButton.Enabled = false;
+            ShowDataButton.Enabled = false;
             CreateTableButton.Enabled = false;
             DeleteTableButton.Enabled = false;
             ShowNamesButton.Enabled = false;
@@ -47,7 +48,8 @@ namespace DB_06_03_25_gr
 
         private void ConnectButton_Click(object sender, EventArgs e)
         {
-            _sqlConnection = new SqlConnection("Integrated Security=SSPI;User=DESKTOP-J9GNRTJ\\MSI;Server=DESKTOP-J9GNRTJ\\SQLEXPRESS");
+            _dbConnection.ConnectionString = "Integrated Security=SSPI;User=DESKTOP-6NP6TQ3\\Student;Server=DESKTOP-6NP6TQ3\\SQLEXPRESS";
+            _dbConnection.Open();
 
             ConnectButton.Enabled = false;
             DisconnectButton.Enabled = true;
@@ -65,8 +67,7 @@ namespace DB_06_03_25_gr
 
         private void DisconnectButton_Click(object sender, EventArgs e)
         {
-            _sqlConnection.Close();
-            _sqlConnection = null;
+            _dbConnection.Close();
 
             ConnectButton.Enabled = true;
             DisconnectButton.Enabled = false;
@@ -86,10 +87,12 @@ namespace DB_06_03_25_gr
         {
             if (_sqlConnection != null)
             {
-                string query = "CREATE DATABASE VegetablesFruitis;";
-                _sqlCommand = new SqlCommand(query, _sqlConnection);
+                string query_ = "CREATE DATABASE VegetablesFruitis;";
+                _sqlCommand = new SqlCommand(query_, _sqlConnection);
                 TextLabel.Text = _sqlCommand.ExecuteNonQuery().ToString() + " Создал";
             }
+
+            string query = "CREATE DATABASE VegetablesFruitis;";
 
         }
 
@@ -145,28 +148,28 @@ namespace DB_06_03_25_gr
 
         private void ShowDataButton_Click(object sender, EventArgs e)
         {
-            _dbConnection.ConnectionString = "Integrated Security=SSPI;User=DESKTOP-J9GNRTJ\\MSI;Server=DESKTOP-J9GNRTJ\\SQLEXPRESS";
-
-           string query = "SELECT * FROM VegetablesFruitis.dbo.VegetablesFruits;";
+            string query = "SELECT * FROM VegetablesFruitis.dbo.VegetablesFruits;";
 
             _dataAdapter = _dbProviderFactory.CreateDataAdapter();
             _dataAdapter.SelectCommand = _dbConnection.CreateCommand();
             _dataAdapter.SelectCommand.CommandText = query;
 
-            dataTable = new DataTable();
-            _dataAdapter.Fill(dataTable);
-            dataGridView.DataSource = dataTable;
+            _dataTable = new DataTable();
+            _dataAdapter.Fill(_dataTable);
+            dataGridView.DataSource = _dataTable;
         }
 
         private void ShowNamesButton_Click(object sender, EventArgs e)
         {
             string query = "SELECT name FROM VegetablesFruitis.dbo.VegetablesFruits;";
 
-            _dataAdapter = new SqlDataAdapter(query, _sqlConnection);
-            //_sqlCommandBuilder = new SqlCommandBuilder(_dataAdapter);
-            _dataSet = new DataSet();
-            _dataAdapter.Fill(_dataSet, "NameDataTable");
-            dataGridView.DataSource = _dataSet.Tables["NameDataTable"];
+            _dataAdapter = _dbProviderFactory.CreateDataAdapter();
+            _dataAdapter.SelectCommand = _dbConnection.CreateCommand();
+            _dataAdapter.SelectCommand.CommandText = query;
+
+            _dataTable = new DataTable();
+            _dataAdapter.Fill(_dataTable);
+            dataGridView.DataSource = _dataTable;
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -207,6 +210,8 @@ namespace DB_06_03_25_gr
             _dbProviderFactory = DbProviderFactories.GetFactory(comboBox.SelectedItem.ToString());
             _dbConnection = _dbProviderFactory.CreateConnection();
             TextLabel.Text = "Выбрана" + comboBox.SelectedItem.ToString();
+
+            ConnectButton.Enabled = true;
         }
     }
 }
