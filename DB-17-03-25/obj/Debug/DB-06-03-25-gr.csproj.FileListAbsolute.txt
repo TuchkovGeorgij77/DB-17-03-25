@@ -1,0 +1,40 @@
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\bin\Debug\DB-06-03-25-gr.exe.config
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\bin\Debug\DB-06-03-25-gr.exe
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\bin\Debug\DB-06-03-25-gr.pdb
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB-06-03-25-gr.csproj.AssemblyReference.cache
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB_06_03_25_gr.MainWindowForm.resources
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB_06_03_25_gr.Properties.Resources.resources
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB-06-03-25-gr.csproj.GenerateResource.cache
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB-06-03-25-gr.csproj.CoreCompileInputs.cache
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB-06-03-25-gr.exe
+D:\Tuchkov\Доступ к базам данных\DB-06-03-25-gr\obj\Debug\DB-06-03-25-gr.pdb
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\bin\Debug\DB-06-03-25-gr.exe.config
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\bin\Debug\DB-06-03-25-gr.exe
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\bin\Debug\DB-06-03-25-gr.pdb
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.AssemblyReference.cache
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB_06_03_25_gr.MainWindowForm.resources
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB_06_03_25_gr.Properties.Resources.resources
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.GenerateResource.cache
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB-06-03-25-gr.exe
+C:\Users\MSI\Documents\ADO Net\DB-14-03-25\obj\Debug\DB-06-03-25-gr.pdb
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\bin\Debug\DB-06-03-25-gr.exe.config
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\bin\Debug\DB-06-03-25-gr.exe
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\bin\Debug\DB-06-03-25-gr.pdb
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.AssemblyReference.cache
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB_06_03_25_gr.MainWindowForm.resources
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB_06_03_25_gr.Properties.Resources.resources
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.GenerateResource.cache
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB-06-03-25-gr.csproj.CoreCompileInputs.cache
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB-06-03-25-gr.exe
+D:\Tuchkov\Доступ к базам данных\DB-14-03-25\obj\Debug\DB-06-03-25-gr.pdb
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\bin\Debug\DB-06-03-25-gr.exe.config
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\bin\Debug\DB-06-03-25-gr.exe
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\bin\Debug\DB-06-03-25-gr.pdb
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB-06-03-25-gr.csproj.AssemblyReference.cache
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB_06_03_25_gr.MainWindowForm.resources
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB_06_03_25_gr.Properties.Resources.resources
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB-06-03-25-gr.csproj.GenerateResource.cache
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB-06-03-25-gr.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB-06-03-25-gr.exe
+C:\Users\MSI\Documents\ADO Net\DB-17-03-25\obj\Debug\DB-06-03-25-gr.pdb
